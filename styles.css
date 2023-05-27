@@ -1,0 +1,139 @@
+
+*{
+    margin:0%;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    color:white;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    margin: 0 auto;
+    margin-top:20vh;
+
+}
+
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    overflow: hidden;
+    padding: 2%;
+    border-radius: 2%;
+    font-size: 18px;
+    box-shadow: 0 0 30px 5px rgba(0,0,0,0.75);
+
+}
+.card h1{
+    font-size: x-large;
+    font-weight: 900;
+    margin-bottom: 4%;
+}
+.card h1:hover{
+    color: hsla(178, 100%, 50%,1); 
+}
+.card p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card .stats{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.card .content{
+    margin-top:3%;
+}
+.card-footer{
+    border-top: solid 1px  hsl(215, 51%, 70%);;
+    padding-top:5%;
+    display: flex;
+    align-items: center;
+}
+.card-footer img{
+    margin-right: 2%;
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.card-footer p{
+    color:hsl(215, 51%, 70%) ;
+}
+.card-footer span:hover{
+    color: cyan;
+}
+.card-footer span{
+    color: white;
+}
+.img-component{
+    overflow: hidden;
+    position: relative;
+}
+.img-component img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    display: block;
+   
+}
+.img-overlay{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%,0.5);
+    display: none;
+
+}
+.img-overlay img{
+    position: absolute;
+    width: 20%;
+    height:20%;
+    left: 50px;
+    top: 50px;
+    transform:translate(100%,100%) ;
+}
+.img-component:hover .img-overlay{ 
+    /* position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%,0.5); */
+    display: block;
+
+}
+
+.stats .content{
+    align-items: center;
+    align-self: center;
+    /* border: 1px solid white; */
+    width:100%;
+    display: flex;
+    
+}
+.stats #days{
+    justify-content: end;
+    /* border: solid 1px white; */
+}
+.stats p{
+    align-self: center;
+    color :hsl(178, 100%, 50%);
+    margin-left:5%;
+}
+.stats .days  {
+    align-self: center;
+    color:hsl(215, 51%, 70%);
+    
+   
+}
